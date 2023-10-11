@@ -1,0 +1,150 @@
+/* підключаємо новий шрифт */
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+
+/* встановлюємо кольор фону на сайті */
+body{
+    font-family: Inter, Vollkorn;
+    background: linear-gradient(90deg, #0008ff 0%, #00091f 100%);
+}
+
+/* робим колір для вкладки  */
+.nav-link {
+    color: blue;
+}
+
+/* робим колір для актів вкладки */
+.navbar-nav .nav-link.active {
+    color: rgb(0, 0, 0);
+}
+
+/* задаємо ширину логотипу */
+.navbar-brand img {
+    width: 50px;
+}
+
+/* колір бургеру */
+ .navbar-toggler {
+    color: rgb(0, 0, 0);
+    background-color: rgb(192, 198, 0);
+} 
+/* Задаю розміру шрифту карткам */
+ .card-text-cpu{
+    font-size: 15px;
+}
+.card-text-cont{
+font-size: 17px ;    
+}
+
+.card-text-lap{
+    font-size: 18px;
+}
+
+/* Задаю колір шрифту бічної панелі */
+
+.sidebar{
+    color: rgb(83, 142, 0); 
+    background: linear-gradient(270deg, #0008ff 0%, #00091f 100%);
+}
+
+.card{
+    background: linear-gradient(210deg, #0008ff 0%, #00091f 100%);
+    color: rgb(83, 142, 0); 
+}
+     /* задаємо колір посилань та прибираємо підчоркування */
+.card a{
+    color: rgb(83, 142, 0); 
+    text-decoration: none;
+}
+/* задаю рамку каруселі */
+.carousel-inner{
+    border-style: dotted;
+}
+/* задаємо кольор тексту та росположення по центру тексту каруселі */
+.slide-text{
+    color: rgb(83, 142, 0);
+    margin: auto auto;
+}
+/* Прибираємо на телефоні ніжні кнопки на каруселі*/
+ @media (max-width: 755px) {
+    .carousel-indicators{
+        display: none;
+    }
+} 
+
+/* задаємо колір тексту та росположення по центру тексту футера */
+.footer-text{
+    color: rgb(83, 142, 0);
+    margin: auto auto;
+}
+
+/* задаємо колір фону та вітступ футера */
+footer{
+    margin-top: 360px;
+    background: linear-gradient(270deg, #0008ff 0%, #00091f 100%)
+}
+
+/* задаємо росположення картинок ютуб та телега по центру */
+.media-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Задаю колір Help */
+.help {
+    color: rgb(83, 142, 0);
+    text-decoration: none;
+}
+.phone-help{
+    text-decoration: none;
+}
+
+/* Робимо анімацію */
+.call-anim{
+    animation: call 2s ease 0s infinite normal none;
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+/* Задаємо колір допоміжній кнопці */
+.btn-primary{
+     background: linear-gradient(90deg, #0008ff 0%, #00091f 100%)
+}
+/* Задаємо колір та росположення заголовку інформації */
+.info {
+    text-align: center;
+    color: rgb(83, 142, 0);
+}
+
+.info-text{
+    display: inline-block;
+    border-style: groove;
+    border-width: 0.5px;
+    padding-right: 25px;
+    background-color: black;
+}
+
